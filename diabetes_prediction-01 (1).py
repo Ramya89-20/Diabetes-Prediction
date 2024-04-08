@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 
-pickle_in=open("Daibetes_RandomForest.pkl","rb")
+pickle_in=open("Diabetes_RandomForest.pkl","rb")
 classifier=pickle.load(pickle_in)
 
 def predict_output(sex,age,hypertension,heart_disease,smoking_history,bmi,HbA1c_level,blood_glucose_level):
